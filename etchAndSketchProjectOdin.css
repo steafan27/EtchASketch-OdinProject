@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container-flex-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.game-title {
+    font-family: Helvetica;
+    color: green;
+}
+
+#tile-container-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*first value is sqrt of this ID length*/
+    background-color: grey;
+    border: 1px solid black;
+    width: 800px;
+    height: 800px;
+
+}
+
+.tile-grid-item {
+    background-color: whitesmoke;
+    /*border: 1px solid black;*/
+}
+
+.etch-options-container {
+    border: 1px solid black;
+}
